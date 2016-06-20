@@ -1,0 +1,55 @@
+.finance-right-content {
+    transition: all $speed ease;
+}
+
+.finance-left-menu {
+    transition: all $speed ease;
+    position: fixed;
+    top: $top-nav-height;
+    left: $offcanvas-width;
+    transform: translateX(-100%);
+    box-shadow: none;
+    background: $offblack;
+    z-index: 1001;
+}
+
+.finance-option-header {
+    display: none;
+}
+
+.finance-option {
+    text-shadow: none;
+    
+    &:hover {
+        color: white;
+    }
+    
+    &::before {
+        font-size: 12px;
+        text-shadow: none;
+    }
+    
+    &.active, &.active::before {
+        color: $brand;
+    }
+}
+
+.finance-options--active {
+    .finance-left-menu {
+        transform: translateX(0);
+    }
+    
+    .finance-right-content {
+        transform: translateX($finance-options-width);
+    }
+}
+
+#finance-query {
+    box-shadow: none;
+    background: white;
+}
+
+#show-query-button {
+    margin-left: 0;
+    transform: translateX(-50%) translateY(-100%);
+}

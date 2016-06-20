@@ -1,0 +1,123 @@
+/*!---------------------------------------------------------------------------*\
+    
+	#IKNOW CHURCH
+	
+	- Version:      1.0
+	- Author:       Darby Manning
+	- Site:         https://creativelittledots.co.uk
+	- Copyright:    2016, Creative Little Dots
+	
+\*----------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------------*\
+	#SETTINGS
+	
+	Globally-available variables, settings & config switches.
+\*----------------------------------------------------------------------------*/
+
+@import 'theme/settings/global';              // Global variables & config.
+@import 'theme/settings/grid';                // Grid & breakpoint variables.
+@import 'theme/settings/colors';              // Colour code variables.
+
+
+
+/*----------------------------------------------------------------------------*\
+	#TOOLS
+	
+	Globally-available tools, public mixins & helper functions.
+\*----------------------------------------------------------------------------*/
+
+@import 'theme/tools/functions';              // Useful functions.
+@import 'theme/tools/mixins';                 // Useful mixins.
+
+
+
+/*----------------------------------------------------------------------------*\
+	#GENERIC
+	
+	Ground-zero styles. Low-specificity, far-reaching.
+\*----------------------------------------------------------------------------*/
+
+@import 'theme/generic/reset';                // Reset rules
+@import 'theme/generic/keyframes';            // CSS Keyframe blocks.
+@import 'theme/generic/fonts';                // Vector icons/fonts includes.
+
+
+
+
+/*----------------------------------------------------------------------------*\
+	#ELEMENTS
+	
+	Last layer for type selectors (h1-h6, a) & far-reaching shared selectors.
+\*----------------------------------------------------------------------------*/
+
+@import 'theme/elements/shared';              // Shared global commonalities.
+@import 'theme/elements/document';            // Page-level styles (HTML, body etc).
+@import 'theme/elements/type';                // Misc type styles.
+@import 'theme/elements/links';               // Hyperlink styles.
+@import 'theme/elements/lists';               // List styles.
+@import 'theme/elements/images';              // Image stying.
+@import 'theme/elements/quotes';              // Blockquotes, cite, etc.
+@import 'theme/elements/forms';               // Form inputs, textareas.
+@import 'theme/elements/headings';            // Headings as classes too.
+
+
+
+/*----------------------------------------------------------------------------*\
+	#OBJECTS
+	
+	Design Patterns. No cosmetics. Start using agnostic classes only.
+\*----------------------------------------------------------------------------*/
+
+@import 'theme/objects/wrappers';             // Wrapping & constraining elements.
+
+
+
+/*----------------------------------------------------------------------------*\
+	#PARTIES
+	
+	Third party styles that appear globally, such as sliders & modals.
+\*----------------------------------------------------------------------------*/
+
+@import 'theme/parties/slick';                // A responsive carousel plugin.
+@import 'theme/parties/select';               // A customisable select input.
+@import 'bower_components/css-hamburgers/_sass/hamburgers/hamburgers';  // Pretty hamburgers.
+
+
+
+/*----------------------------------------------------------------------------*\
+	#COMPONENTS
+	
+	Designed pieces of UI. Only using classes. More explicit naming.
+\*----------------------------------------------------------------------------*/
+
+@import 'theme/components/page-header';       // The page header.
+@import 'theme/components/page-main';         // The page main.
+@import 'theme/components/page-footer';       // The page footer.
+@import 'theme/components/offcanvas';         // Offcanvas menu.
+@import 'theme/components/dash';              // Dashboard widgets.
+@import 'theme/components/btn';               // Buttons.
+@import 'theme/components/ticketing';         // Ticketing.
+@import 'theme/components/metrics';           // Metrics.
+@import 'theme/components/tabs';              // Tabs.
+@import 'theme/components/finder';            // Finder.
+@import 'theme/components/status';            // Status.
+@import 'theme/components/events';            // Events.
+@import 'theme/components/login';             // Login.
+@import 'theme/components/media';             // Media.
+@import 'theme/components/dropdown';          // Dropdown.
+@import 'theme/components/finance';           // Finance.
+
+
+/*----------------------------------------------------------------------------*\
+	#TRUMPS
+	
+	Overrides, helpers, utilities. Only affect one item at a time.
+\*----------------------------------------------------------------------------*/
+
+@import 'theme/trumps/modernizr';             // Modernizr enabled overrides.
+@import 'theme/trumps/spacing';               // Micro-level spacing.
+@import 'theme/trumps/validation';            // Form validation styles.
+@import 'theme/trumps/visibility';            // Helpers to show and side stuff.

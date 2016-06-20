@@ -1,0 +1,146 @@
+.offcanvas {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: $offcanvas-width;
+    background-color: white;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    z-index: 1002;
+
+    &__profile {
+        text-align: center;
+        padding: $global-padding;
+    }
+    
+    &__pic {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin: 1rem auto;
+        display: block;
+        border: 2px solid $slate;
+    }
+    
+    &__dropdown {
+        position: absolute;
+        width: calc(100% - 2rem);
+        z-index: 1;
+        left: 1rem;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(30px);
+        transition: all $speed ease $speed;
+        list-style: none;
+        margin: 0;
+        background: white;
+        border: 1px solid darken($offwhite, 5%);
+        border-radius: 1px solid darken($offwhite, 5%)-radius;
+        
+        br { display: none; }
+        
+        &__link {
+            padding: ($global-padding/2);
+            display: block;
+            
+            &:hover {
+                background: $offwhite;
+                text-decoration: none;
+            }
+            
+        }
+        
+        &__li {
+            
+            &:first-of-type a {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    bottom: 100%;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 0 8px 8px 8px;
+                    border-color: transparent transparent white transparent;
+                    -webkit-transform:rotate(360deg);
+                    transform: translateX(-50%);
+                    filter:
+                        drop-shadow(-1px -1px 0 darken($offwhite, 5%))
+                        drop-shadow(1px -1px 0 darken($offwhite, 5%))
+                    ;
+                }
+                
+                &:hover::before {
+                    border-color: transparent transparent $offwhite transparent;
+                }
+   
+            }
+
+            
+            + .offcanvas__dropdown__li {
+                border-top: 1px solid darken($offwhite, 5%);
+            }
+        }
+    }
+    
+    &__name {
+        &:hover .offcanvas__dropdown {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: all;
+        }
+        
+        .h3 {
+            padding-bottom: 1rem;
+        }
+    }
+    
+    &__menu {
+        list-style: none;
+        margin: 0;
+        
+        &__li {
+            border-top: 1px solid $offwhite;
+        }
+        
+        &__link {
+            display: block;
+            padding: ($global-padding/2) $global-padding;
+            
+            &--current {
+                background: linear-gradient($brand, darken($brand, 3%));
+                color: white;
+                
+                &:hover {
+                    background: linear-gradient(darken($brand, 2%), darken($brand, 5%));
+                    color: white;
+                }
+            }
+            
+            &::before {
+                float: left;
+                font-size: 1.5rem;
+                position: relative;
+                top: 2px;
+                width: 35px;
+            }
+            
+            &.cld-finder::before {
+                font-size: 1.25rem;
+                top: 4px;
+            }
+        }
+    }
+    
+    @media screen and (max-width: $size-sm) {
+        left: -#{$offcanvas-width};
+        transition: all $speed ease;
+    }
+}
+
+.offcanvas--active .offcanvas {
+    left: 0;
+}

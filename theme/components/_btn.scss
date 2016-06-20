@@ -1,0 +1,43 @@
+.btn {
+    background: $brand;
+    text-shadow: none;
+    color: white;
+    border: 2px solid $brand;
+    box-shadow: none;
+    
+    &:hover {
+        background: transparent;
+        color: $brand;
+    }
+    
+    &#globalHelpButton, &--finance-options {
+        color: white;
+        background: transparent;
+        box-shadow: none;
+        appearance: none;
+        text-shadow: none;
+        border: none;
+        padding: $global-padding ($global-padding*1.5);
+        margin: 0;
+
+        @media screen and (max-width: $size-sm) {
+            display: none !important;
+        }
+    }
+    
+    &--finance-options::before {
+        font-size: 32px;
+        line-height: 0 !important;
+        margin-right: 0.5rem;
+        position: relative;
+        top: 10px;
+    }
+}
+
+.btn-group>.btn:last-child, .btn-group>.dropdown-toggle {
+    border-radius: 1px solid darken($offwhite, 5%)-radius;
+}
+
+.navbar .btn-group {
+    margin-top: 10px;
+}

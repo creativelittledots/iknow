@@ -1,0 +1,19 @@
+.campusDropdown {
+    width: 400px;
+    
+    li > a {
+        margin: 0.75rem !important;
+        
+        &:hover {
+            @extend .offcanvas__menu__link--current;
+        }
+    }
+    
+    .dropmenu-img {
+        display: none;
+    }
+    
+    .dropmenu-text {
+        width: 100%;
+    }
+}

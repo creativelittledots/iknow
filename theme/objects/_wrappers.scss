@@ -6,7 +6,7 @@ body.P1_dashboard, body {
     padding: 0;
 }
 
-.navbar--fixed-top, .wrapper, #mapContainer {
+.navbar--fixed-top, .wrapper {
     width: calc(100% - #{$offcanvas-width});
     right: 0;
     left: auto;
@@ -18,12 +18,12 @@ body.P1_dashboard, body {
     }
 }
 
-.offcanvas--active .navbar--fixed-top, .offcanvas--active .wrapper, .offcanvas--active #mapContainer {
+.offcanvas--active .navbar--fixed-top, .offcanvas--active .wrapper {
     left: $offcanvas-width;
 }
 
-.wrapper, #mapContainer {
-    top: $top-nav-height;
+.wrapper {
+    margin-top: $top-nav-height;
     background: $offwhite;
     padding: ($global-padding*2);
     height: 100vh;
@@ -32,4 +32,8 @@ body.P1_dashboard, body {
 .colFullScreen {
     background: white;
     box-shadow: inset 0 0 0 1px darken($offwhite, 5%);
+}
+
+#mapContainer {
+    margin: -2.5rem 0 0 -2rem;
 }

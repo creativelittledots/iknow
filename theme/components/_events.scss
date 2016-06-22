@@ -16,3 +16,11 @@ span#calLabel {
     width: 100% !important;
     margin: 0 !important;
 }
+
+#showCal, #calendarWrap, .btn-toolbar {
+    width: auto !important;
+}
+
+.dayHead, .dayCell, .dayBlank {
+    width: 14.285% !important;
+}

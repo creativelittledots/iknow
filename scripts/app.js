@@ -29,8 +29,11 @@
     	#LOAD STYLESHEET DEPENDENCIES
     \*--------------------------------------------------*/
     
-    $('body').append('<link href="//iknow.code-lab.co.uk/style.css" rel="stylesheet" type="text/css">');
-    $('body').append('<link href="//file.myfontastic.com/i3XTHDqptTuJvFUMSmSp5R/icons.css" rel="stylesheet">');
+    $('body')
+        .append('<link href="//iknow.code-lab.co.uk/style.css" rel="stylesheet" type="text/css">')
+        .append('<link href="//file.myfontastic.com/i3XTHDqptTuJvFUMSmSp5R/icons.css" rel="stylesheet">')
+        .addClass('wrapper')
+    ;
     
     
     
@@ -72,8 +75,7 @@
         
         /* Create offcanvas wrapper */
         $('.appmenu')
-            .removeClass('dropdown-menu appmenu')
-            .addClass('offcanvas__menu')
+            .toggleClass('dropdown-menu appmenu offcanvas__menu')
             .parent()
                 .replaceWith(function() { return '<aside class="offcanvas">' + this.innerHTML + '</aside>'; })
         ;
@@ -85,23 +87,20 @@
     
         /* Create profile wrapper */
         $('.top.top-left')
-            .removeClass('top top-left')
-            .addClass('offcanvas__profile')
+            .toggleClass('top top-left offcanvas__profile')
             .unwrap()
             .prependTo('.offcanvas')
         ;
         
         /* Create profile name */
         $('.offcanvas__profile .text-info')
-            .removeClass('text-info')
+            .toggleClass('text-info h3')
             .wrap('<div class="offcanvas__name"></div>')
-            .addClass('h3')
         ;
     
         /* Create profile avatar */    
         $('.col2ShowImg')
-            .removeClass('col2ShowImg')
-            .addClass('offcanvas__pic')
+            .toggleClass('col2ShowImg offcanvas__pic')
             .removeAttr('style')
         ;
     
@@ -163,16 +162,9 @@
             
         });
         
-        
-        /* Add a wrapper for the main content */
-        $(window).load(function() {
-            $('body').wrapInner('<main class="wrapper"></main>');   
-        });
-        
         /* Customise the help button */
         $('.icon-question-sign')
-            .removeClass('icon-question-sign')
-            .addClass('cld-help')
+            .toggleClass('icon-question-sign cld-help')
         ;
         
         if (pathname === '/finances') {

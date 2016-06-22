@@ -1,0 +1,24 @@
+.columnHeader {
+    background: $brand;
+}
+
+.finder-container {
+    position: relative;
+}
+
+.finder-left-menu, .finder-right-menu {
+    background: white;
+    border: 1px solid darken($offwhite, 5%);
+    box-shadow: none;
+    border-radius: 1px solid darken($offwhite, 5%)-radius;
+}
+
+.finder-option-header {
+    background: $brand;
+    color: white;
+    text-shadow: none;
+}
+
+.finder-right-content {
+    width: calc(100% - #{$offcanvas-width + 250px}) !important;
+}

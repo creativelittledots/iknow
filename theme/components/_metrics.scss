@@ -1,0 +1,49 @@
+.metrics-top-bar {
+    background: transparent;
+    box-shadow: none;
+    margin: 0;
+    height: auto;
+}
+
+.metrics-micro-graph-wrapper {
+    margin: 0;
+}
+
+.highcharts-container {
+    border: 1px solid darken($offwhite, 5%);
+    width: 100%;
+    border-radius: 1px solid darken($offwhite, 5%)-radius;
+}
+
+.metrics-number-square {
+    background: white;
+    box-shadow: none;
+    border: 1px solid darken($offwhite, 5%);
+    
+    &:hover {
+        background: white;        
+    }
+}
+
+[data-g-w='12'] {
+    width: calc(50% - 2rem);
+    
+    + [data-g-w='12'] {
+        margin-left: 2rem;
+    }
+}
+
+[data-table-role="data"] {
+    width: calc(100% - 1.25rem);
+    border: 1px solid darken($offwhite, 5%);
+    border-radius: 1px solid darken($offwhite, 5%)-radius;
+}
+
+[data-table-role="data"] [data-role="table-header"] [data-role="tablerow"] [data-role="cell"] {
+    background: $brand;
+    color: white;
+    text-shadow: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+}

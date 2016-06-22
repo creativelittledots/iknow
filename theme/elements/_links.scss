@@ -1,0 +1,7 @@
+a {
+    color: $text;
+    
+    &:hover {
+        color: darken($text, 10%);
+    }
+}

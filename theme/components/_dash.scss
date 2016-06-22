@@ -1,0 +1,58 @@
+.dash-widget {
+    box-shadow: none;
+    border-radius: 1px solid darken($offwhite, 5%)-radius;
+    border: 1px solid lighten($cadet, 15%);
+    background: white;
+    
+    .dash-widget-header {
+        background: transparent;
+        text-shadow: none;
+        color: $text;
+        padding: 13px 15px;
+    }
+    
+    .dash-ad {
+        margin: 0 !important;
+        max-width: 100%;
+        height: auto !important;
+        width: auto !important;
+        border-radius: 0;
+        
+        .addImgs {
+            width: 100% !important;
+            
+            img, li {
+                margin: 0;
+                max-width: 100%;
+                height: auto !important;
+                width: auto !important;
+            }
+        }
+    
+        .list_carousel, .caroufredsel_wrapper {
+            width: 100% !important;
+        }
+    }
+}
+
+.thisWeek {
+    .day {
+        border-color: $brand;
+        border-radius: 1px solid darken($offwhite, 5%)-radius;
+        
+        .dayHeader {
+            background: $brand;
+            border-radius: 1px solid darken($offwhite, 5%)-radius 1px solid darken($offwhite, 5%)-radius 0 0;
+        }
+    }
+}
+
+.rotaRemCont {
+    position: relative;
+}
+
+.rotaRemDays {
+    position: absolute;
+    width: 60px;
+    right: 0;
+}

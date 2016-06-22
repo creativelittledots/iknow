@@ -1,0 +1,27 @@
+.tab-content {
+    padding: $global-padding;
+    background: white;
+    border: 1px solid darken($offwhite, 5%);
+    border-top: none;
+}
+
+.nav.nav-tabs {
+    margin-bottom: 0;
+}
+
+.nav-tabs>.active>a, .nav-tabs>.active>a:hover {
+    border: 1px solid darken($offwhite, 5%);
+    border-bottom-color: transparent;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid darken($offwhite, 5%);
+}
+
+.pdf-list .pdf-option {
+    height: auto;
+    
+    [data-role="table"] {
+        margin: 0;
+    }
+}

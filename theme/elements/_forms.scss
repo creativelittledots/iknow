@@ -1,0 +1,24 @@
+.input-prepend {
+    .add-on:first-of-type {
+        display: none;
+    }
+    .add-on, input[type="text"] {
+        height: 32px;
+    }
+}
+
+.controls {
+    padding: 0 0.5rem;
+}
+
+.formEntryRight {
+    height: auto;
+}
+
+.formEntryRight input, .formEntryRight select {
+    width: 100%;
+}
+
+ul#personEditTabs.nav.nav-tabs {
+    background: transparent !important;
+}

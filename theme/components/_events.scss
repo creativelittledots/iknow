@@ -1,0 +1,18 @@
+.dayHead {
+    height: auto;
+    padding: 0.375rem 0;
+}
+
+span#calLabel {
+    color: white !important;
+    font-style: normal !important;
+}
+
+.btn:hover span#calLabel {
+    color: $brand !important;
+}
+
+#calendarWrap {
+    width: 100% !important;
+    margin: 0 !important;
+}

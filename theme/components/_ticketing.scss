@@ -1,0 +1,82 @@
+.carousel {
+    width: auto;
+}
+
+.main-screen {
+    width: 100%;
+}
+
+.event .icon .cont {
+    background: transparent;
+    border: none;
+}
+
+.eventDetails {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    height: auto;
+}
+
+.eventBanner {
+    display: none;
+}
+
+.eventKnob {
+    width: auto;
+    display: inline-block;
+    overflow: auto;
+    height: auto;
+    margin: 1rem auto;
+}
+
+.eventInfoSlab {
+    text-align: left;
+    height: auto;
+    border-radius: 50em;
+}
+
+.eventTitleInner {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+.eventTileHold {
+    padding-bottom: 0;
+    height: auto;
+}
+
+.eilabel, span.eilabel.ei, span.eitext.ei {
+    font-size: 1rem !important;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.eilabel {
+    padding: ($global-padding/2) $global-padding;
+}
+
+.eitext {
+    color: $brand;
+}
+
+// Add new event
+.eventMainWrapper {
+    > div:nth-of-type(1) {
+        display: none;
+    }
+
+    > div:nth-of-type(2) {
+        width: 100%;
+        float: left;
+    }
+}
+
+.editTheEventName {
+    text-align: left;
+    padding: 0.25rem 0.5rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}

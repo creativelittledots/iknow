@@ -29,8 +29,8 @@
     	#LOAD STYLESHEET DEPENDENCIES
     \*--------------------------------------------------*/
     
-    $('head').append('<link href="//iknow.code-lab.co.uk/style.css" rel="stylesheet" type="text/css">');
-    $('head').append('<link href="//file.myfontastic.com/i3XTHDqptTuJvFUMSmSp5R/icons.css" rel="stylesheet">');
+    $('body').append('<link href="//iknow.code-lab.co.uk/style.css" rel="stylesheet" type="text/css">');
+    $('body').append('<link href="//file.myfontastic.com/i3XTHDqptTuJvFUMSmSp5R/icons.css" rel="stylesheet">');
     
     
     

@@ -47,11 +47,11 @@
         }
     }
     
-    .btn-group.pull-right {
+    .btn-group.pull-right, .btn-group.pull-left {
         margin: 0;
 
-        a {
-            margin: $global-padding ($global-padding*1.5);
+        a, .btn, .controls {
+            margin: $global-padding ($global-padding/1.5);
         }
     }
 }

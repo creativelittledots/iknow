@@ -17,7 +17,7 @@
         appearance: none;
         text-shadow: none;
         border: none;
-        padding: $global-padding ($global-padding*1.5);
+        padding: ($global-padding*1.5);
         margin: 0;
 
         @media screen and (max-width: $size-sm) {
